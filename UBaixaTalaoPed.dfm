@@ -1,0 +1,286 @@
+object frmBaixaTalaoPed: TfrmBaixaTalaoPed
+  Left = 266
+  Top = 161
+  Width = 754
+  Height = 419
+  Caption = 'frmBaixaTalaoPed'
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'MS Sans Serif'
+  Font.Style = []
+  KeyPreview = True
+  OldCreateOrder = False
+  OnClose = FormClose
+  OnShow = FormShow
+  PixelsPerInch = 96
+  TextHeight = 13
+  object Panel1: TPanel
+    Left = 0
+    Top = 0
+    Width = 738
+    Height = 33
+    Align = alTop
+    Color = clSilver
+    TabOrder = 0
+    object Label1: TLabel
+      Left = 9
+      Top = 12
+      Width = 70
+      Height = 16
+      Alignment = taRightJustify
+      Caption = 'N'#186' Pedido:'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -13
+      Font.Name = 'Verdana'
+      Font.Style = []
+      ParentFont = False
+    end
+    object Label2: TLabel
+      Left = 206
+      Top = 12
+      Width = 36
+      Height = 16
+      Alignment = taRightJustify
+      Caption = 'Item:'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -13
+      Font.Name = 'Verdana'
+      Font.Style = []
+      ParentFont = False
+    end
+    object Label5: TLabel
+      Left = 360
+      Top = 9
+      Width = 218
+      Height = 13
+      Caption = 'Informe o Pedido e o Item e pressione ENTER'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clMaroon
+      Font.Height = -12
+      Font.Name = 'MS Sans Serif'
+      Font.Style = []
+      ParentFont = False
+    end
+    object CurrencyEdit1: TCurrencyEdit
+      Left = 82
+      Top = 7
+      Width = 105
+      Height = 21
+      AutoSize = False
+      Ctl3D = False
+      DecimalPlaces = 0
+      DisplayFormat = '0'
+      ParentCtl3D = False
+      TabOrder = 0
+      OnKeyDown = CurrencyEdit1KeyDown
+    end
+    object CurrencyEdit2: TCurrencyEdit
+      Left = 245
+      Top = 7
+      Width = 105
+      Height = 21
+      AutoSize = False
+      Ctl3D = False
+      DecimalPlaces = 0
+      DisplayFormat = '0'
+      ParentCtl3D = False
+      TabOrder = 1
+      OnKeyDown = CurrencyEdit2KeyDown
+    end
+  end
+  object Panel2: TPanel
+    Left = 0
+    Top = 33
+    Width = 738
+    Height = 58
+    Align = alTop
+    TabOrder = 1
+    Visible = False
+    object Label3: TLabel
+      Left = 58
+      Top = 14
+      Width = 49
+      Height = 16
+      Alignment = taRightJustify
+      Caption = 'Tempo:'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -13
+      Font.Name = 'Verdana'
+      Font.Style = []
+      ParentFont = False
+    end
+    object Label4: TLabel
+      Left = 218
+      Top = 14
+      Width = 65
+      Height = 16
+      Alignment = taRightJustify
+      Caption = 'Dt. Baixa:'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -13
+      Font.Name = 'Verdana'
+      Font.Style = []
+      ParentFont = False
+    end
+    object Label6: TLabel
+      Left = 12
+      Top = 39
+      Width = 95
+      Height = 16
+      Alignment = taRightJustify
+      Caption = 'C'#243'd. Maquina:'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -13
+      Font.Name = 'Verdana'
+      Font.Style = []
+      ParentFont = False
+    end
+    object Label7: TLabel
+      Left = 193
+      Top = 36
+      Width = 5
+      Height = 16
+      Caption = '.'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBlue
+      Font.Height = -13
+      Font.Name = 'Verdana'
+      Font.Style = []
+      ParentFont = False
+    end
+    object CurrencyEdit3: TCurrencyEdit
+      Left = 111
+      Top = 8
+      Width = 79
+      Height = 22
+      AutoSize = False
+      Color = 16770222
+      Ctl3D = False
+      DisplayFormat = '0.00'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -13
+      Font.Name = 'Verdana'
+      Font.Style = []
+      ParentCtl3D = False
+      ParentFont = False
+      TabOrder = 0
+      OnKeyDown = CurrencyEdit3KeyDown
+    end
+    object DateEdit1: TDateEdit
+      Left = 287
+      Top = 7
+      Width = 121
+      Height = 23
+      Color = 16770222
+      Ctl3D = False
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -13
+      Font.Name = 'Verdana'
+      Font.Style = []
+      NumGlyphs = 2
+      ParentCtl3D = False
+      ParentFont = False
+      TabOrder = 1
+      OnKeyDown = DateEdit1KeyDown
+    end
+    object btnConfirmar: TNxButton
+      Left = 411
+      Top = 28
+      Width = 116
+      Height = 25
+      Caption = 'Confirmar'
+      Color = 16752448
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBlue
+      Font.Height = -11
+      Font.Name = 'MS Sans Serif'
+      Font.Style = [fsBold]
+      GlyphSpacing = 5
+      ParentColor = False
+      ParentFont = False
+      ParentShowHint = False
+      ShowHint = True
+      TabOrder = 2
+      Transparent = True
+      OnClick = btnConfirmarClick
+    end
+    object btnCancelar: TNxButton
+      Left = 529
+      Top = 28
+      Width = 116
+      Height = 25
+      Caption = 'Cancelar'
+      Color = clRed
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clRed
+      Font.Height = -11
+      Font.Name = 'MS Sans Serif'
+      Font.Style = [fsBold]
+      GlyphSpacing = 5
+      ParentColor = False
+      ParentFont = False
+      ParentShowHint = False
+      ShowHint = True
+      TabOrder = 3
+      Transparent = True
+      OnClick = btnCancelarClick
+    end
+    object CurrencyEdit4: TCurrencyEdit
+      Left = 111
+      Top = 32
+      Width = 79
+      Height = 22
+      AutoSize = False
+      Color = 16770222
+      Ctl3D = False
+      DecimalPlaces = 0
+      DisplayFormat = '0'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -13
+      Font.Name = 'Verdana'
+      Font.Style = []
+      ParentCtl3D = False
+      ParentFont = False
+      TabOrder = 4
+      OnExit = CurrencyEdit4Exit
+      OnKeyDown = CurrencyEdit4KeyDown
+    end
+  end
+  object Panel3: TPanel
+    Left = 0
+    Top = 91
+    Width = 738
+    Height = 289
+    Align = alClient
+    TabOrder = 2
+    Visible = False
+    object Memo1: TMemo
+      Left = 83
+      Top = 23
+      Width = 577
+      Height = 234
+      TabStop = False
+      Color = clMoneyGreen
+      Ctl3D = False
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -13
+      Font.Name = 'Verdana'
+      Font.Style = []
+      ParentCtl3D = False
+      ParentFont = False
+      ReadOnly = True
+      TabOrder = 0
+    end
+  end
+end
